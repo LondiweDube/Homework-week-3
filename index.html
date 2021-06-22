@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <h2 class="generate-password-display" id="passwordDisplay">Your Secure Password</h2>
+        <form id="PasswordGenerator" class="form">
+            <!-- The range input affects the and the number inpuut is for the number box. The range input will however not work until js is added.-->
+            <label for="charAmount">Number of Characters</label>
+            <div class="Number-characters-container">
+            <input type="range" min="1" max="40" value="10" id="charRange">
+            <input class="number-input" type="number" min="1" max="40" value="10" 
+            id="charAmount">
+            </div>
+            
+            <!-- The checkbox input allows for me to create list of requirements wanted on the password-->
+            <label for="IncludeUpperLetters">Include Uppercase Letters</label>
+            <input type="checkbox" id="IncludeUpperLetters">
+
+            <label for="IncludeNumbers">Include Numbers</label>
+            <input type="checkbox" id="IncludeNumbers">
+
+            <label for="IncludeSymbols">Include Symbols</label>
+            <input type="checkbox" id="IncludeSymbols">
+
+            <button type="submit" class="GPBtn">Generate Password</button>
+        </form>
+    </div>
+
+
+ </body>
+ <script src="script.js"></script>
+
+</html>

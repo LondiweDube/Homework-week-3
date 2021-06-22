@@ -1,0 +1,86 @@
+body {
+    background-color: gray;
+    color: black;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.container{
+background-color: pink;
+padding: 3rem;
+border: 2px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: .5rem;
+}
+
+/*used css grid to create the two columns for the password generator*/
+.form{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+/* This allows the input box to be aligned to the range slider */
+.Number-characters-container{
+    display: flex;
+    align-items: center;
+}
+
+/* I set the width to 2rem so the input box would be smaller, not really necessary but ensures a better looking UI*/
+.number-input{
+    width: 2rem;
+}
+
+.generate-password-display{
+    background-color: whitesmoke;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 1rem;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* The word break allows for the text to border moved to the next line if it's too long for the box. 
+    Along with the flex function which will extend to keep all the character in the box*/
+    word-break: break-all;
+    border-radius: 1rem;
+
+}
+
+.GPBtn{
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid white ;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+.GPButton:hover{
+    background-color: #ffffff33;
+}
+
+
