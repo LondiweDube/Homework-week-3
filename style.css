@@ -61,10 +61,10 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 1rem;
     /* The word break allows for the text to border moved to the next line if it's too long for the box. 
     Along with the flex function which will extend to keep all the character in the box*/
     word-break: break-all;
-    border-radius: 1rem;
 
 }
 
